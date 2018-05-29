@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+		<title>Green Life - K-TECH</title>
+	  <!--Import materialize.css-->
+	  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+
+	  
+
+	  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+	  <!--Let browser know website is optimized for mobile-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	  <link rel="icon" href="images/logo.jpg">
+
+	  <!-- Custom CSS -->
+	  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+	</head>
+
+	<body>
+	  <!--Import jQuery before materialize.js-->
+
+		<div class="phone-view">
+			<div class="app-view">
+			<div class="appbg">
+				
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="app-menu">
+						<div class="logo">
+							<p class="cname"><b>K-TECH</b></p>
+							<i class="moto">The greener, the safer</i>
+						</div>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="greenlife.html">Green Life</a></li>
+							<li><a href="livesafer.html">Live Safer</a></li>
+							<li><a href="takepart.html">Take part</a></li>
+						</ul>
+					  </div>
+				</div>
+				<div class="col-sm-12">
+					<div class="contact cont">
+
+
+						<h1 class="main-title">Recycling industries</h1>
+
+
+						<div class="card indcard">
+						  <div class="card-block">
+						    <h4 class="card-title"><span class="indcname">Ecoplasic</span></h4>
+						    <p class="card-text">Location: Masoro</p>
+						    <p class="card-text">They recycle: <b>Plastics, metals</b></p>
+						    <p>Contact: <span class="contact-phone">+250 788526312 </span></p>
+						    <button class="btn btn-primary contact-ind pull-right">Contact</button>
+						    <div class="clearfix"></div>
+						  </div>
+						</div>
+
+						<div class="card indcard">
+						  <div class="card-block">
+						    <h4 class="card-title"><span class="indcname">Roto plastic</span></h4>
+						    <p class="card-text">Location: Masoro</p>
+						    <p class="card-text">They recycle: <b>Plastics, metals, glass, e-waste</b></p>
+						    <p>Contact: <span class="contact-phone">+250 78830 3966</span></p>
+						    <button class="btn btn-primary contact-ind pull-right">Contact</button>
+						    <div class="clearfix"></div>
+						  </div>
+						</div>
+
+						<div class="card indcard">
+						  <div class="card-block">
+						    <h4 class="card-title"><span class="indcname">Soimex plastic</span></h4>
+						    <p class="card-text">Location: Karongi</p>
+						    <p class="card-text">They recycle: <b>Plastics, glass, e-waste</b></p>
+						    <p>Contact: <span class="contact-phone">+250 788354192</span></p>
+						    <button class="btn btn-primary contact-ind pull-right">Contact</button>
+						    <div class="clearfix"></div>
+						  </div>
+						</div>
+
+						<!-- <div class="re-ind">
+							<li><span class="indcname">Ecoplasic</span>: <span class="contact-click">+250 788526312 </span></li>
+							<li><span class="indcname">Roto plastic</span>: <span class="contact-click">+250 78830 3966 </span></li>
+							<li><span class="indcname">Soimex plastic</span>: <span class="contact-click">+250 788354192 </span></li>
+						</div> -->
+						<div class="ind-add">
+							<p>
+								If you are a recycling industry you can register yourself by clicking on the bellow button.....
+							</p>
+							<form class="addcomp-form">
+								<div class="form-group">
+									Company name:
+									<input type="text" name="" id="name" class="form-control" required="required">
+								</div>
+								<div class="form-group">
+									Contact phones:
+									<input type="number" name="" class="form-control" id="pnumber" required="required">
+								</div>
+								<div class="form-group">
+									<textarea class="clatextarea form-control" placeholder="Tell us what you recycle" rows="3"></textarea>
+								</div>
+
+								
+								<button class="pull-right btn waves-effect waves-light btn-large">SEND</button>
+								<div class="clearfix"></div>
+							</form>
+						</div>
+						<div class="land-mana">
+							<h3>Landfill managers</h3>
+							<ul>
+								<li>RURA: <span>+250 252 584562</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clearfix"></div>
+								
+			</div>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="modal fade" id="ind-contact">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">Contact <span class="fill-inName"></span></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<p>Contact: <b><i class="fill-phone"></i></b></p>
+				      	<form>
+				      		<div class="form-group">
+				      			Your name: <input type="text" class="form-control" id="name" required>
+				      		</div>
+				      		<div class="form-group">
+				      			Contact phone: <input type="text" class="form-control" id="phone" required>
+				      		</div>
+				      		<div class="form-group">				      		
+				      			<textarea class="form-control" id="message" placeholder="Tell us what you need to recycle or just message" rows="5"></textarea>
+				      		</div>
+				      	</form>
+				      	<p class="text-danger errorlog"></p>
+
+				      	<div class="send-stat" style="display: none;">
+				      		<p class="send-text-stat">Sending message</p>
+				      		<div id="loader">
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="lading"></div>
+							</div>
+				      	</div>
+
+				      	
+
+				        <p><i>The industry will contact you for your queries sooner</i></p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-primary sendmsg-btn">Send</button>
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+				
+			</div>
+		</div>
+
+	  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+	  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+	  <script type="text/javascript" src="js/script.js"></script>
+	</body>
+  </html>
